@@ -1,5 +1,5 @@
-body {
-    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+ body {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/645/879/747/coffee-donuts-cup-coffee-wallpaper-preview.jpg);
     font-family: sans-serif;
     padding: 20px;
     background-position: center;
@@ -70,7 +70,7 @@ img {
     width: 25%;
   }
   
-  /* FOOTER */
+
   
   footer {
     font-size: 14px;
