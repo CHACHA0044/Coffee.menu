@@ -3,66 +3,390 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafe Menu</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>TASTE' n' HASTE - Cafe Menu</title>
+    <meta name="description" content="Delicious coffee and desserts at TASTE' n' HASTE. Est. 2024" />
+    <link rel="stylesheet" href="menu-styles.css">
   </head>
   <body>
-    <div class="menu">
-      <main>
-        <h1>TASTE' n' HASTE</h1>
-        <p class="established">Est. 2024</p>
-        <hr>
-        <section>
-          <h2>Coffee</h2>
-          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
-          <article class="item">
-            <p class="flavor"><a href="https://imgs.search.brave.com/Gbg48N7gSkPP5AaJW5OLocammOu98WSbHi9_9XrwNqc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9saWZl/Ym9vc3Rjb2ZmZWUu/Y29tL2Nkbi9zaG9w/L2FydGljbGVzL2Zl/YXR1cmUtaW1hZ2Vf/ODBlN2VhNGMtOTQ2/YS00OTE3LWEyNzkt/NjJmZjk5YmIyODRk/LmpwZz92PTE2ODU5/NDg5NjU" target="_blank">French Vanilla</a></p>
-            <p class="price">₹300</p>
-          </article>
-          <article class="item">
-            <p class="flavor"><a href="https://imgs.search.brave.com/uwPbUkB4f0Xy6jEot6LCucgh4QqCcQzxPoiZDe1AEko/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/YXZlcmllY29va3Mu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE3LzExL2NhcmFt/ZWxtYWNjaGlhdG8t/MTguanBn" target="_blank">Caramel Macchiato</a></p>
-            <p class="price">₹375</p>
-          </article>
-          <article class="item">
-            <p class="flavor"><a href="https://imgs.search.brave.com/rDKyY8AZBVRaJ8njV1md0DLIbfsCdt_TKnQVG5vJbfo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/YWNvdXBsZWNvb2tz/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMS8xMC9QdW1w/a2luLVNwaWNlLUNv/ZmZlZS0wMDYuanBn" target="_blank">Pumpkin Spice</a></p>
-            <p class="price">₹350</p>
-          </article>
-          <article class="item">
-            <p class="flavor"><a href="https://imgs.search.brave.com/uEX67VVYFztrgSWK_y6hiXAt6qOWG1-SvF5M_grLlb4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/dGFzdGVvZmhvbWUu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE4LzAxL2V4cHMx/MzM5MjRfVEhDQTIx/ODAxMTFEMDNfMDNf/NGJfV0VCLTYuanBn/P2ZpdD03MDAsNzAw" target="_blank">Hazelnut</a></p>
-            <p class="price">₹400</p>
-          </article>
-          <article class="item">
-            <p class="flavor"><a href="https://imgs.search.brave.com/t35IykwUEseUqF8Z-EsTCJqADScDPKI8JNZawTr-G00/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/ZXZlcnlkYXktZGVs/aWNpb3VzLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMS8w/NS9jYWZmZWUtbW9j/aGEta2F3YS1tb2tr/YS1ldmVyeWRheS1k/ZWxpY2lvdXMtMS0x/MTk3eDE4MDAuanBn" target="_blank">Mocha</a></p>
-            <p class="price">₹450</p>
-          </article>
-        </section>
-        <section>
-          <h2>Desserts</h2>
-          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon"/>
-          <article class="item">
-            <p class="dessert"><a href="https://imgs.search.brave.com/3Oe55bafNXIelIXOL2Pai_Hhyyx_loIZ8RH2jnRa-io/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTMw/MDgzNDU5L3Bob3Rv/L2RvbnV0cy5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9Ql95/UEJOMVpMUEZRdy1v/ME9QSVFuT0luMjFS/TkdxWVRla2NadGh3/Y0d4Yz0" target="_blank">Donut</a></p>
-            <p class="price">₹150</p>
-          </article>
-          <article class="item">
-            <p class="dessert"><a href="https://imgs.search.brave.com/U8peJtwobcu1BbHamWulgkvIm9sPB8Zn_--PLqppiKE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTUz/MDUyNjc2L3Bob3Rv/L2NoZXJyeS1waWUu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PWFKU2NZMnR5NHZ1/RE1KaXBwZWNBX1pm/dGRHUHVkT0FVMUI0/LS1GNDktcDQ9" target="_blank">Cherry Pie</a></p>
-            <p class="price">₹275</p>
-          </article>
-          <article class="item">
-            <p class="dessert"><a href="https://imgs.search.brave.com/TDyYeH-TONY6yR3OWO0miVXILOjTTcR1rFc1aXiM3kY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNjgy/OTY4ODQ2L3Bob3Rv/L2hvbWVtYWRlLWNo/ZWVzZWNha2UuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVFS/NmV2Z2J0NjBTS2FQ/cFVXa3BVcUY2Umpz/UmVIcFByZjB5TDFX/ZG4xdnM9" target="_blank">Cheesecake</a></p>
-            <p class="price">₹300</p>
-          </article>
-          <article class="item">
-            <p class="dessert"><a href="https://imgs.search.brave.com/KNIYoIp3pUH-vsFGYi5ZhCYznUp5iqKdgiOwnARzF3M/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzcwLzQ3Lzk3/LzM2MF9GXzI3MDQ3/OTc2MV9nQ2YwNURK/NVJiTWJQMmRYb2Yy/dmRVcENtSzgwZ0Y4/RC5qcGc" target="_blank">Cinnamon Roll</a></p>
-            <p class="price">₹250</p>
-          </article>
-        </section>
-      </main>
-      <hr class="bottom-line">
-      <footer>
-        <p>
-          <a href="https://www.iul.ac.in/" target="_blank">INTEGRAL UNIVERSITY</a>
-        </p>
-      </footer>
+    <div class="background-overlay"></div>
+    
+    <div class="menu-container">
+      <div class="menu">
+        <main>
+          <div class="header-section">
+            <h1 class="main-title">
+              <span class="letter-animate">T</span>
+              <span class="letter-animate">A</span>
+              <span class="letter-animate">S</span>
+              <span class="letter-animate">T</span>
+              <span class="letter-animate">E</span>
+              <span class="letter-animate">'</span>
+              <span class="letter-animate">n</span>
+              <span class="letter-animate">'</span>
+              <span class="letter-animate">H</span>
+              <span class="letter-animate">A</span>
+              <span class="letter-animate">S</span>
+              <span class="letter-animate">T</span>
+              <span class="letter-animate">E</span>
+            </h1>
+            
+            <p class="established shine-text">✨ Est. 2024 ✨</p>
+            
+            <div class="emoji-decoration bottom-emoji">
+              <span class="float-emoji delay-1">🍩</span>
+              <span class="float-emoji delay-2">☕</span>
+              <span class="float-emoji">🥐</span>
+            </div>
+          </div>
+
+          <hr class="divider pulse-line">
+
+          <section class="coffee-section fade-in-section">
+            <div class="section-header">
+              <h2 class="section-title">Coffee Collection</h2>
+              <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" 
+                   alt="coffee icon"
+                   class="section-icon bounce-icon"/>
+            </div>
+
+            <div class="items-container">
+              <article class="menu-item slide-in-left">
+                <input type="checkbox" id="coffee1" class="item-toggle">
+                <label for="coffee1" class="item-header-label">
+                  <div class="item-header">
+                    <div class="item-name-container">
+                      <span class="item-emoji">🌟</span>
+                      <span class="flavor-link">French Vanilla</span>
+                    </div>
+                    <p class="price">₹300</p>
+                  </div>
+                  <p class="description">Smooth and creamy vanilla-infused coffee with a sweet, aromatic finish. A classic favorite! 🤎</p>
+                  <span class="expand-icon">▼</span>
+                </label>
+                <div class="item-details">
+                  <div class="details-content">
+                    <div class="details-image">
+                      <img src="images/coffee/french-vanilla.jpg" alt="French Vanilla">
+                    </div>
+                    <div class="details-recipe">
+                      <h3>Recipe</h3>
+                      <ul>
+                        <li>2 shots of espresso</li>
+                        <li>1 cup steamed milk</li>
+                        <li>2 tbsp vanilla syrup</li>
+                        <li>Whipped cream topping</li>
+                        <li>Vanilla bean garnish</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item slide-in-right">
+                <input type="checkbox" id="coffee2" class="item-toggle">
+                <label for="coffee2" class="item-header-label">
+                  <div class="item-header">
+                    <div class="item-name-container">
+                      <span class="item-emoji">🍯</span>
+                      <span class="flavor-link">Caramel Macchiato</span>
+                    </div>
+                    <p class="price">₹375</p>
+                  </div>
+                  <p class="description">Rich espresso layered with velvety steamed milk, topped with buttery caramel drizzle ✨</p>
+                  <span class="expand-icon">▼</span>
+                </label>
+                <div class="item-details">
+                  <div class="details-content">
+                    <div class="details-image">
+                      <img src="images/coffee/caramel-macchiato.jpg" alt="Caramel Macchiato">
+                    </div>
+                    <div class="details-recipe">
+                      <h3>Recipe</h3>
+                      <ul>
+                        <li>2 shots of espresso</li>
+                        <li>1 cup steamed milk</li>
+                        <li>Vanilla syrup base</li>
+                        <li>Caramel drizzle on top</li>
+                        <li>Foam layer finish</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item slide-in-left">
+                <input type="checkbox" id="coffee3" class="item-toggle">
+                <label for="coffee3" class="item-header-label">
+                  <div class="item-header">
+                    <div class="item-name-container">
+                      <span class="item-emoji">🎃</span>
+                      <span class="flavor-link">Pumpkin Spice</span>
+                    </div>
+                    <p class="price">₹350</p>
+                  </div>
+                  <p class="description">Seasonal blend of cinnamon, nutmeg, and clove with real pumpkin. Warm & cozy! 🍂</p>
+                  <span class="expand-icon">▼</span>
+                </label>
+                <div class="item-details">
+                  <div class="details-content">
+                    <div class="details-image">
+                      <img src="images/coffee/pumpkin-spice.jpg" alt="Pumpkin Spice">
+                    </div>
+                    <div class="details-recipe">
+                      <h3>Recipe</h3>
+                      <ul>
+                        <li>2 shots of espresso</li>
+                        <li>Pumpkin puree mix</li>
+                        <li>Cinnamon & nutmeg</li>
+                        <li>Steamed milk</li>
+                        <li>Whipped cream & spice dust</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item slide-in-right">
+                <input type="checkbox" id="coffee4" class="item-toggle">
+                <label for="coffee4" class="item-header-label">
+                  <div class="item-header">
+                    <div class="item-name-container">
+                      <span class="item-emoji">🌰</span>
+                      <span class="flavor-link">Hazelnut</span>
+                    </div>
+                    <p class="price">₹400</p>
+                  </div>
+                  <p class="description">Premium roasted hazelnut essence blended with bold espresso. Nutty, sweet, smooth! 💫</p>
+                  <span class="expand-icon">▼</span>
+                </label>
+                <div class="item-details">
+                  <div class="details-content">
+                    <div class="details-image">
+                      <img src="images/coffee/hazelnut.jpg" alt="Hazelnut">
+                    </div>
+                    <div class="details-recipe">
+                      <h3>Recipe</h3>
+                      <ul>
+                        <li>2 shots of espresso</li>
+                        <li>Hazelnut syrup</li>
+                        <li>1 cup steamed milk</li>
+                        <li>Crushed hazelnuts</li>
+                        <li>Chocolate shavings</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item slide-in-left">
+                <input type="checkbox" id="coffee5" class="item-toggle">
+                <label for="coffee5" class="item-header-label">
+                  <div class="item-header">
+                    <div class="item-name-container">
+                      <span class="item-emoji">🍫</span>
+                      <span class="flavor-link">Mocha</span>
+                    </div>
+                    <p class="price">₹450</p>
+                  </div>
+                  <p class="description">Luxurious chocolate and espresso fusion topped with whipped cream. Pure indulgence! 🎀</p>
+                  <span class="expand-icon">▼</span>
+                </label>
+                <div class="item-details">
+                  <div class="details-content">
+                    <div class="details-image">
+                      <img src="images/coffee/mocha.jpg" alt="Mocha">
+                    </div>
+                    <div class="details-recipe">
+                      <h3>Recipe</h3>
+                      <ul>
+                        <li>2 shots of espresso</li>
+                        <li>Rich chocolate syrup</li>
+                        <li>Steamed milk</li>
+                        <li>Whipped cream topping</li>
+                        <li>Chocolate powder dusting</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+<hr class="divider pulse-line">
+          <section class="desserts-section fade-in-section">
+            <div class="section-header">
+              <br />
+              <h2 class="section-title">Sweet Treats</h2>
+              <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" 
+                   alt="pie icon"
+                   class="section-icon bounce-icon"/>
+            </div>
+
+            <div class="items-container">
+              <article class="menu-item zoom-in">
+                <input type="checkbox" id="dessert1" class="item-toggle">
+                <label for="dessert1" class="item-header-label">
+                  <div class="item-header">
+                    <div class="item-name-container">
+                      <span class="item-emoji">🍩</span>
+                      <span class="flavor-link">Donut</span>
+                    </div>
+                    <p class="price">₹150</p>
+                  </div>
+                  <p class="description">Freshly baked, glazed to perfection ✨</p>
+                  <span class="expand-icon">▼</span>
+                </label>
+                <div class="item-details">
+                  <div class="details-content">
+                    <div class="details-image">
+                      <img src="images/desserts/donut.jpg" alt="Donut">
+                    </div>
+                    <div class="details-recipe">
+                      <h3>Recipe</h3>
+                      <ul>
+                        <li>Fresh dough daily</li>
+                        <li>Deep fried golden</li>
+                        <li>Vanilla glaze coating</li>
+                        <li>Colorful sprinkles</li>
+                        <li>Served warm & fresh</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item zoom-in delay-1">
+                <input type="checkbox" id="dessert2" class="item-toggle">
+                <label for="dessert2" class="item-header-label">
+                  <div class="item-header">
+                    <div class="item-name-container">
+                      <span class="item-emoji">🥧</span>
+                      <span class="flavor-link">Cherry Pie</span>
+                    </div>
+                    <p class="price">₹275</p>
+                  </div>
+                  <p class="description">Classic homemade with love 🍒</p>
+                  <span class="expand-icon">▼</span>
+                </label>
+                <div class="item-details">
+                  <div class="details-content">
+                    <div class="details-image">
+                      <img src="images/desserts/cherry-pie.jpg" alt="Cherry Pie">
+                    </div>
+                    <div class="details-recipe">
+                      <h3>Recipe</h3>
+                      <ul>
+                        <li>Buttery flaky crust</li>
+                        <li>Fresh cherry filling</li>
+                        <li>Sugar & cinnamon blend</li>
+                        <li>Lattice top design</li>
+                        <li>Baked till golden brown</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item zoom-in delay-2">
+                <input type="checkbox" id="dessert3" class="item-toggle">
+                <label for="dessert3" class="item-header-label">
+                  <div class="item-header">
+                    <div class="item-name-container">
+                      <span class="item-emoji">🍰</span>
+                      <span class="flavor-link">Cheesecake</span>
+                    </div>
+                    <p class="price">₹300</p>
+                  </div>
+                  <p class="description">Rich, creamy New York style 💝</p>
+                  <span class="expand-icon">▼</span>
+                </label>
+                <div class="item-details">
+                  <div class="details-content">
+                    <div class="details-image">
+                      <img src="images/desserts/cheesecake.jpg" alt="Cheesecake">
+                    </div>
+                    <div class="details-recipe">
+                      <h3>Recipe</h3>
+                      <ul>
+                        <li>Graham cracker base</li>
+                        <li>Cream cheese filling</li>
+                        <li>Sugar & vanilla extract</li>
+                        <li>Berry compote topping</li>
+                        <li>Chilled to perfection</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="menu-item zoom-in delay-3">
+                <input type="checkbox" id="dessert4" class="item-toggle">
+                <label for="dessert4" class="item-header-label">
+                  <div class="item-header">
+                    <div class="item-name-container">
+                      <span class="item-emoji">🥐</span>
+                      <span class="flavor-link">Cinnamon Roll</span>
+                    </div>
+                    <p class="price">₹250</p>
+                  </div>
+                  <p class="description">Warm, gooey, perfectly spiced 🌟</p>
+                  <span class="expand-icon">▼</span>
+                </label>
+                <div class="item-details">
+                  <div class="details-content">
+                    <div class="details-image">
+                      <img src="images/desserts/cinnamon-roll.jpg" alt="Cinnamon Roll">
+                    </div>
+                    <div class="details-recipe">
+                      <h3>Recipe</h3>
+                      <ul>
+                        <li>Soft yeast dough</li>
+                        <li>Brown sugar filling</li>
+                        <li>Cinnamon swirl</li>
+                        <li>Cream cheese frosting</li>
+                        <li>Served warm from oven</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </main>
+
+        <hr class="divider bottom-divider pulse-line">
+
+        <footer class="footer fade-in-section">
+          <div class="footer-emoji">
+  <div class="emoji-bounce-container">
+    <span class="bounce-emoji">🏫</span>
+    <span class="sparkle sparkle-1">✨</span>
+    <span class="sparkle sparkle-2">✨</span>
+    <span class="sparkle sparkle-3">✨</span>
+    <span class="sparkle sparkle-4">✨</span>
+  </div>
+  <div class="footer-decoration">
+    <span class="deco-line"></span>
+    <span class="deco-dot">•</span>
+    <span class="deco-line"></span>
+  </div>
+</div>
+          <p class="footer-text">
+            <a href="https://www.iul.ac.in/" target="_blank" class="footer-link">
+              Integral University
+            </a>
+          </p>
+          <p class="tagline">Where taste meets haste! 🚀☕</p>
+        </footer>
+      </div>
+    </div>
+
+    <div class="floating-emojis">
+      <span class="bg-emoji emoji-1">☕</span>
+      <span class="bg-emoji emoji-2">🍩</span>
+      <span class="bg-emoji emoji-3">🧁</span>
+      <span class="bg-emoji emoji-4">🍰</span>
+      <span class="bg-emoji emoji-5">☕</span>
+      <span class="bg-emoji emoji-6">🥐</span>
     </div>
   </body>
 </html>
